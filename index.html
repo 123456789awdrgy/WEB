@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Codex 中文上手指南：从第一次提问到高效协作的实用方法。" />
+  <title>和 Codex 一起工作 · 中文协作指南</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#top"><span class="brand-mark">⌘</span><span>CODEX<span class="brand-dot">.</span>CN</span></a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#start">开始使用</a><a href="#workflow">工作流</a><a href="#prompts">提示词</a><a href="#faq">常见问题</a>
+    </nav>
+    <a class="github-link" href="https://github.com/openai/codex" target="_blank" rel="noreferrer">GitHub ↗</a>
+    <button class="menu-btn" aria-label="打开菜单">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="eyebrow"><span class="pulse"></span> 人机协作 · 中文实践指南</div>
+      <h1>和 <em>Codex</em> 一起工作，<br />把想法变成成果。</h1>
+      <p class="hero-copy">Codex 是住在终端里的 AI 编程伙伴。你负责判断方向和验收结果，它负责探索项目、编写代码、运行测试，让每一次协作都更清晰。</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#start">5 分钟上手 <span>↓</span></a><a class="btn btn-quiet" href="#workflow">看看它能做什么 <span>→</span></a></div>
+      <div class="terminal-card">
+        <div class="terminal-bar"><span></span><span></span><span></span><label>~/my-project</label></div>
+        <div class="terminal-body"><div><b class="prompt">$</b> <span class="command">codex</span></div><div class="terminal-muted">欢迎使用 Codex。你想构建什么？</div><div class="terminal-line"><b class="prompt">›</b> <span class="typing">帮我看看这个项目的结构，并告诉我从哪里开始</span><span class="cursor"></span></div></div>
+      </div>
+    </section>
+
+    <section class="stat-strip section-wrap"><div><strong>01</strong><span>从项目开始</span></div><div><strong>02</strong><span>用自然语言协作</span></div><div><strong>03</strong><span>检查、测试、交付</span></div><div class="strip-note">为开发者设计<br /><b>越用越顺手</b></div></section>
+
+    <section id="start" class="content-section section-wrap"><div class="section-kicker">/ 01 · WORK TOGETHER</div><div class="section-heading"><h2>和 Codex 合作，<br />从三件事开始。</h2><p>把背景讲清楚、让它先提出计划、认真检查结果。你不需要把控制权交出去，好的协作来自持续反馈。</p></div><div class="steps"><article class="step-card"><span class="step-num">01</span><div class="step-icon">⌘</div><h3>给它工作上下文</h3><p>进入项目后，先让 Codex 阅读 README、目录和测试命令。</p><code>codex<br />请先了解这个项目，再告诉我从哪里开始</code></article><article class="step-card featured"><span class="step-num">02</span><div class="step-icon">✦</div><h3>一起拆解任务</h3><p>用自然语言说目标、限制和验收标准，让它先解释方案，再动手。</p><blockquote>“先给我一个实现计划，确认后再修改文件。”</blockquote></article><article class="step-card"><span class="step-num">03</span><div class="step-icon">✓</div><h3>共同复核结果</h3><p>查看 diff、运行测试、追问取舍；满意后再提交或合并。</p><div class="mini-check">✓ 人来决策&nbsp;&nbsp; ✓ AI 来执行</div></article></div></section>
+
+    <section id="workflow" class="workflow-section"><div class="section-wrap"><div class="section-kicker">/ 02 · WORKFLOW</div><div class="section-heading"><h2>把协作变成<br /><span>一条顺畅的流水线。</span></h2><p>从“我不知道该看哪里”开始，到一个可以合并的改动结束。每一步都可以暂停、追问和回退。</p></div><div class="flow"><div class="flow-item"><span>01</span><h3>探索</h3><p>让 Codex 阅读项目，梳理结构与依赖。</p></div><div class="flow-arrow">→</div><div class="flow-item"><span>02</span><h3>计划</h3><p>先讨论方案，再决定改哪些文件。</p></div><div class="flow-arrow">→</div><div class="flow-item"><span>03</span><h3>执行</h3><p>边写代码边运行命令，实时看到结果。</p></div><div class="flow-arrow">→</div><div class="flow-item"><span>04</span><h3>交付</h3><p>检查 diff、跑测试，准备提交。</p></div></div></div></section>
+
+    <section id="prompts" class="content-section section-wrap"><div class="section-kicker">/ 03 · PROMPT KIT</div><div class="section-heading"><h2>四种高频说法，<br />马上复制使用。</h2><p>好的提示词不是越长越好，而是让目标、范围和完成标准都变得具体。</p></div><div class="prompt-grid"><button class="prompt-card" data-prompt="先阅读这个项目的 README 和目录结构，告诉我它的入口、主要模块，以及运行测试的命令。"><span>了解项目</span><b>“先带我逛一遍这个项目”</b><small>探索 · 适合刚接手陌生代码</small><i>复制 →</i></button><button class="prompt-card" data-prompt="请实现：____。只修改与此需求直接相关的文件。完成后运行相关测试，并告诉我改了什么。"><span>实现功能</span><b>“请实现一个小而完整的功能”</b><small>开发 · 带上验收标准</small><i>复制 →</i></button><button class="prompt-card" data-prompt="这个测试失败了：____。请定位根因，先解释你的判断，再给出最小修复并补充测试。"><span>修复问题</span><b>“这个错误到底为什么发生？”</b><small>调试 · 先原因，后修改</small><i>复制 →</i></button><button class="prompt-card" data-prompt="请检查当前改动的安全性、边界情况和可维护性。列出按严重程度排序的问题，不要直接修改文件。"><span>代码审查</span><b>“帮我做一次上线前检查”</b><small>审查 · 保持只读</small><i>复制 →</i></button></div><div class="copy-toast" role="status">已复制到剪贴板 ✓</div></section>
+
+    <section id="faq" class="faq-section"><div class="section-wrap"><div class="section-kicker">/ 04 · FAQ</div><div class="faq-layout"><h2>还有疑问？<br /><span>从这里开始。</span></h2><div class="faq-list"><details open><summary>Codex 会直接修改我的代码吗？<span>＋</span></summary><p>它会根据你的请求提出计划并执行操作。每次改动都可以通过 diff 查看；涉及高风险操作时，它会先征求你的确认。</p></details><details><summary>我需要会写提示词吗？<span>＋</span></summary><p>不需要。像和一位新同事沟通一样说话即可。描述目标、现状和完成标准，遇到不确定的地方让它先提问。</p></details><details><summary>它和普通聊天机器人有什么不同？<span>＋</span></summary><p>Codex 能在你的真实项目中读写文件、运行命令和测试。它关注的是把一个可验证的改动交付出来。</p></details><details><summary>使用它安全吗？<span>＋</span></summary><p>把它当作一位需要复核的协作者：不要提交密钥，审查每次 diff，并在隔离分支或工作区里尝试重要改动。</p></details></div></div></div></section>
+
+    <section class="closing section-wrap"><div class="closing-mark">⌘</div><h2>准备好和 Codex<br /><em>一起工作</em>了吗？</h2><a class="btn btn-primary" href="#start">开始协作 <span>↗</span></a></section>
+  </main>
+  <footer class="site-footer section-wrap"><span>CODEX.CN · 中文使用指南</span><span>内容持续更新 · <a href="https://github.com/openai/codex" target="_blank" rel="noreferrer">查看开源项目 ↗</a></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
